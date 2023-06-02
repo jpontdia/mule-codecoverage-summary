@@ -3,12 +3,6 @@
 <br>
 <br>
 
-<div class="mulesoft-topbar">
-    <div class="mulesoft-appbar">
-        <div class="muleicon muleicon-logo"></div>
-        <div class="anypoint-brand">MUnit Coverage Report - Mule Configuration Files</div>
-    </div>
-</div>
 <div class="col-md-8 col-md-offset-2">
     <h2 class="text-bold">Application Coverage*</h2>
     <div class="progress">
