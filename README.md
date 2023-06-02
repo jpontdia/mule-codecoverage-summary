@@ -11,6 +11,43 @@ Lets crate a test:
     <link rel="stylesheet" type="text/css" href="assets/styles/tsorter.css">
 </head>
 <body>
+
+
+<style>
+
+
+/* Up and Down Arrows */
+.sortable th.descend:after{
+	content: "\25B2";
+	}
+.sortable th.ascend:after{
+	content: "\25BC";
+	}
+
+th {
+	cursor: pointer;
+}
+.progress {
+	position:relative;
+	background-color : #D9534F;
+}
+.progress span {
+	color:white;
+	position:absolute;
+	left:0;
+	width:100%;
+	text-align:center;
+	z-index:2;
+}
+
+.muleicon {
+	line-height: 30px;
+	font-size: 18px;
+	margin-left: 19px;
+}
+
+</style>
+
 <div class="mulesoft-topbar">
     <div class="mulesoft-appbar">
         <div class="muleicon muleicon-logo"></div>
