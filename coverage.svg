@@ -2,15 +2,6 @@
   <foreignObject width="100%" height="100%">
     <div xmlns="http://www.w3.org/1999/xhtml">
 
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title>MUnit Coverage Report</title>
-    <link rel="stylesheet" type="text/css" href="assets/styles/mulesoft-styles.css">
-    <link rel="stylesheet" type="text/css" href="assets/styles/tsorter.css">
-</head>
-<body>
-
 
 <style>
 
@@ -7322,22 +7313,6 @@ table > tbody > tr.reset-border > td {
     <h4>(*) Number of processors executed during test</h4>
     <h4>(**) Number of processors inside the resource over the total number of processors in the application</h4>
 </div>
-<script type="text/javascript" src="assets/js/tsorter.min.js"></script>
-<script type="text/javascript">
-    function init() {
-        var sorter = tsorter.create('resources_table', 0, {
-            coverage: function (row) {
-                var cov = this.getCell(row).childNodes[1].childNodes[3].attributes['aria-valuenow'].textContent;
-                return parseFloat(cov.substring(cov[0].length - 1), 10);
-            }
-        });
-    }
-
-    window.onload = init;
-
-</script>
-</body>
-</html>
 
     </div>
   </foreignObject>
