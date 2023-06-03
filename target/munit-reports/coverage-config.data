@@ -1,0 +1,16 @@
+{
+  "runCoverage": true,
+  "failBuild": true,
+  "requiredApplicationCoverage": 80.0,
+  "requiredResourceCoverage": 0.0,
+  "requiredFlowCoverage": 20.0,
+  "ignoreFlows": [],
+  "ignoreFiles": [
+    "global-error.xml"
+  ],
+  "formats": [
+    "sonar",
+    "json",
+    "html"
+  ]
+}

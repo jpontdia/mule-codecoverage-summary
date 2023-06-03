@@ -1,0 +1,420 @@
+{
+  "resources": [
+    {
+      "name": "implementations/get.xml",
+      "weight": 35.13513513513514,
+      "flows": [
+        {
+          "name": "queryCustomer",
+          "type": "FLOW",
+          "locations": [
+            {
+              "path": "queryCustomer/processors/2",
+              "lineNumber": 50
+            },
+            {
+              "path": "queryCustomer/processors/1",
+              "lineNumber": 38
+            },
+            {
+              "path": "queryCustomer/processors/0",
+              "lineNumber": 20
+            }
+          ],
+          "coveredLocations": [
+            {
+              "path": "queryCustomer/processors/2",
+              "lineNumber": 50
+            },
+            {
+              "path": "queryCustomer/processors/1",
+              "lineNumber": 38
+            },
+            {
+              "path": "queryCustomer/processors/0",
+              "lineNumber": 20
+            }
+          ]
+        },
+        {
+          "name": "getById",
+          "type": "FLOW",
+          "locations": [
+            {
+              "path": "getById/processors/0",
+              "lineNumber": 79
+            },
+            {
+              "path": "getById/processors/2",
+              "lineNumber": 81
+            },
+            {
+              "path": "getById/processors/1",
+              "lineNumber": 80
+            },
+            {
+              "path": "getById/processors/4",
+              "lineNumber": 87
+            },
+            {
+              "path": "getById/processors/3",
+              "lineNumber": 86
+            }
+          ],
+          "coveredLocations": [
+            {
+              "path": "getById/processors/0",
+              "lineNumber": 79
+            },
+            {
+              "path": "getById/processors/2",
+              "lineNumber": 81
+            },
+            {
+              "path": "getById/processors/1",
+              "lineNumber": 80
+            },
+            {
+              "path": "getById/processors/4",
+              "lineNumber": 87
+            },
+            {
+              "path": "getById/processors/3",
+              "lineNumber": 86
+            }
+          ]
+        },
+        {
+          "name": "getByName",
+          "type": "FLOW",
+          "locations": [
+            {
+              "path": "getByName/processors/4",
+              "lineNumber": 74
+            },
+            {
+              "path": "getByName/processors/3",
+              "lineNumber": 73
+            },
+            {
+              "path": "getByName/processors/2",
+              "lineNumber": 72
+            },
+            {
+              "path": "getByName/processors/0",
+              "lineNumber": 70
+            },
+            {
+              "path": "getByName/processors/1",
+              "lineNumber": 71
+            }
+          ],
+          "coveredLocations": [
+            {
+              "path": "getByName/processors/4",
+              "lineNumber": 74
+            },
+            {
+              "path": "getByName/processors/3",
+              "lineNumber": 73
+            },
+            {
+              "path": "getByName/processors/2",
+              "lineNumber": 72
+            },
+            {
+              "path": "getByName/processors/0",
+              "lineNumber": 70
+            },
+            {
+              "path": "getByName/processors/1",
+              "lineNumber": 71
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "api.xml",
+      "weight": 16.216216216216218,
+      "flows": [
+        {
+          "name": "api-main",
+          "type": "FLOW",
+          "locations": [
+            {
+              "path": "api-main/processors/0",
+              "lineNumber": 14
+            }
+          ],
+          "coveredLocations": [
+            {
+              "path": "api-main/processors/0",
+              "lineNumber": 14
+            }
+          ]
+        },
+        {
+          "name": "get:\\customers:api-config",
+          "type": "FLOW",
+          "locations": [
+            {
+              "path": "get:\\customers:api-config/processors/0",
+              "lineNumber": 34
+            }
+          ],
+          "coveredLocations": [
+            {
+              "path": "get:\\customers:api-config/processors/0",
+              "lineNumber": 34
+            }
+          ]
+        },
+        {
+          "name": "post:\\customers:application\\json:api-config",
+          "type": "FLOW",
+          "locations": [
+            {
+              "path": "post:\\customers:application\\json:api-config/processors/0",
+              "lineNumber": 40
+            }
+          ],
+          "coveredLocations": [
+            {
+              "path": "post:\\customers:application\\json:api-config/processors/0",
+              "lineNumber": 40
+            }
+          ]
+        },
+        {
+          "name": "delete:\\customers\\(customerId):api-config",
+          "type": "FLOW",
+          "locations": [
+            {
+              "path": "delete:\\customers\\(customerId):api-config/processors/0",
+              "lineNumber": 31
+            }
+          ],
+          "coveredLocations": [
+            {
+              "path": "delete:\\customers\\(customerId):api-config/processors/0",
+              "lineNumber": 31
+            }
+          ]
+        },
+        {
+          "name": "get:\\customers\\(customerId):api-config",
+          "type": "FLOW",
+          "locations": [
+            {
+              "path": "get:\\customers\\(customerId):api-config/processors/0",
+              "lineNumber": 37
+            }
+          ],
+          "coveredLocations": [
+            {
+              "path": "get:\\customers\\(customerId):api-config/processors/0",
+              "lineNumber": 37
+            }
+          ]
+        },
+        {
+          "name": "api-console",
+          "type": "FLOW",
+          "locations": [
+            {
+              "path": "api-console/processors/0",
+              "lineNumber": 27
+            }
+          ],
+          "coveredLocations": [
+            {
+              "path": "api-console/processors/0",
+              "lineNumber": 27
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "implementations/post.xml",
+      "weight": 35.13513513513514,
+      "flows": [
+        {
+          "name": "newCustomer",
+          "type": "SCOPE",
+          "locations": [
+            {
+              "path": "newCustomer/processors/1",
+              "lineNumber": 93
+            },
+            {
+              "path": "newCustomer/processors/5/route/0/processors/0",
+              "lineNumber": 115
+            },
+            {
+              "path": "newCustomer/processors/2",
+              "lineNumber": 110
+            },
+            {
+              "path": "newCustomer/processors/4",
+              "lineNumber": 112
+            },
+            {
+              "path": "newCustomer/processors/0",
+              "lineNumber": 90
+            },
+            {
+              "path": "newCustomer/processors/3",
+              "lineNumber": 111
+            },
+            {
+              "path": "newCustomer/processors/5/route/1/processors/0",
+              "lineNumber": 137
+            }
+          ],
+          "coveredLocations": [
+            {
+              "path": "newCustomer/processors/1",
+              "lineNumber": 93
+            },
+            {
+              "path": "newCustomer/processors/5/route/0/processors/0",
+              "lineNumber": 115
+            },
+            {
+              "path": "newCustomer/processors/2",
+              "lineNumber": 110
+            },
+            {
+              "path": "newCustomer/processors/4",
+              "lineNumber": 112
+            },
+            {
+              "path": "newCustomer/processors/0",
+              "lineNumber": 90
+            },
+            {
+              "path": "newCustomer/processors/3",
+              "lineNumber": 111
+            },
+            {
+              "path": "newCustomer/processors/5/route/1/processors/0",
+              "lineNumber": 137
+            }
+          ]
+        },
+        {
+          "name": "post:\\customers",
+          "type": "FLOW",
+          "locations": [
+            {
+              "path": "post:\\customers/processors/1",
+              "lineNumber": 29
+            },
+            {
+              "path": "post:\\customers/processors/2",
+              "lineNumber": 30
+            },
+            {
+              "path": "post:\\customers/processors/4/route/1/processors/0",
+              "lineNumber": 62
+            },
+            {
+              "path": "post:\\customers/processors/3",
+              "lineNumber": 49
+            },
+            {
+              "path": "post:\\customers/processors/4/route/0/processors/0",
+              "lineNumber": 57
+            },
+            {
+              "path": "post:\\customers/processors/0",
+              "lineNumber": 23
+            }
+          ],
+          "coveredLocations": [
+            {
+              "path": "post:\\customers/processors/1",
+              "lineNumber": 29
+            },
+            {
+              "path": "post:\\customers/processors/2",
+              "lineNumber": 30
+            },
+            {
+              "path": "post:\\customers/processors/4/route/1/processors/0",
+              "lineNumber": 62
+            },
+            {
+              "path": "post:\\customers/processors/3",
+              "lineNumber": 49
+            },
+            {
+              "path": "post:\\customers/processors/4/route/0/processors/0",
+              "lineNumber": 57
+            },
+            {
+              "path": "post:\\customers/processors/0",
+              "lineNumber": 23
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "implementations/delete.xml",
+      "weight": 13.513513513513514,
+      "flows": [
+        {
+          "name": "deleteFlow",
+          "type": "FLOW",
+          "locations": [
+            {
+              "path": "deleteFlow/processors/1",
+              "lineNumber": 26
+            },
+            {
+              "path": "deleteFlow/processors/3/route/0/processors/0",
+              "lineNumber": 45
+            },
+            {
+              "path": "deleteFlow/processors/3/route/1/processors/0",
+              "lineNumber": 58
+            },
+            {
+              "path": "deleteFlow/processors/2",
+              "lineNumber": 39
+            },
+            {
+              "path": "deleteFlow/processors/0",
+              "lineNumber": 22
+            }
+          ],
+          "coveredLocations": [
+            {
+              "path": "deleteFlow/processors/1",
+              "lineNumber": 26
+            },
+            {
+              "path": "deleteFlow/processors/3/route/0/processors/0",
+              "lineNumber": 45
+            },
+            {
+              "path": "deleteFlow/processors/3/route/1/processors/0",
+              "lineNumber": 58
+            },
+            {
+              "path": "deleteFlow/processors/2",
+              "lineNumber": 39
+            },
+            {
+              "path": "deleteFlow/processors/0",
+              "lineNumber": 22
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

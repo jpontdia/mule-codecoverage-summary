@@ -1,0 +1,1644 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>MUnit Coverage Report</title>
+    <link rel="stylesheet" type="text/css" href="../assets/styles/mulesoft-styles.css">
+    <link rel="stylesheet" type="text/css" href="../assets/styles/tsorter.css">
+</head>
+<body>
+<div class="mulesoft-topbar">
+    <div class="mulesoft-appbar">
+        <div class="muleicon muleicon-logo"></div>
+        <div class="anypoint-brand">MUnit Coverage Report - implementations/post.xml</div>
+    </div>
+</div>
+
+<div class="col-md-2 col-md-offset-1 sidemenu">
+    <ul class="sidemenu-back">
+        <li><a href="../summary.html">Resources</a></li>
+    </ul>
+</div>
+
+<div class="col-md-8">
+    <h2 class="text-bold">Resource Coverage - #Processors 13 / 13</h2>
+    <div class="progress">
+        <span>100%</span>
+        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="100" aria-valuemin="0"
+             aria-valuemax="100" style="width: 100%;">
+        </div>
+    </div>
+    <ul class="list-unstyled">
+        <li><h4><b>Required Resource Coverage :</b>
+        0%
+        </h4></li>
+        <li><h4><b>Required Container Coverage :</b>
+        20%
+        </h4></li>
+    </ul>
+    <h2 class="text-bold">Containers</h2>
+    <table id="resources_table" class="table table-featured table-hover sortable">
+        <thead>
+        <tr>
+            <th colspan="2">Name</th>
+            <th>Type</th>
+            <th data-tsorter="numeric">#Covered Processors</th>
+            <th data-tsorter="numeric">#Processors</th>
+            <th data-tsorter="coverage">Coverage*</th>
+        </tr>
+        </thead>
+        <tbody id="table-body">
+        <tr>
+            <td colspan="2">newCustomer</td>
+            <td>Scope</td>
+            <td>7</td>
+            <td>7</td>
+            <td>
+                <div class="progress">
+                    <span>100%</span>
+                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="100"
+                         aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">post:\customers</td>
+            <td>Flow</td>
+            <td>6</td>
+            <td>6</td>
+            <td>
+                <div class="progress">
+                    <span>100%</span>
+                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="100"
+                         aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+                    </div>
+                </div>
+            </td>
+        </tr>
+
+        <table>
+            <tbody>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        1
+                    </td>
+                    <td>
+
+                            &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        2
+                    </td>
+                    <td>
+
+                            
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        3
+                    </td>
+                    <td>
+
+                            &lt;mule 
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        4
+                    </td>
+                    <td style="text-indent:10px">
+
+                            	xmlns:salesforce=&quot;http://www.mulesoft.org/schema/mule/salesforce&quot;
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        5
+                    </td>
+                    <td style="text-indent:10px">
+
+                            	xmlns:ee=&quot;http://www.mulesoft.org/schema/mule/ee/core&quot;
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        6
+                    </td>
+                    <td style="text-indent:10px">
+
+                            	xmlns=&quot;http://www.mulesoft.org/schema/mule/core&quot; 
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        7
+                    </td>
+                    <td style="text-indent:10px">
+
+                            	xmlns:doc=&quot;http://www.mulesoft.org/schema/mule/documentation&quot; 
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        8
+                    </td>
+                    <td style="text-indent:10px">
+
+                            	xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; 
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        9
+                    </td>
+                    <td style="text-indent:10px">
+
+                            	xsi:schemaLocation=&quot;
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        10
+                    </td>
+                    <td>
+
+                            http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd http://www.mulesoft.org/schema/mule/core 
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        11
+                    </td>
+                    <td style="text-indent:20px">
+
+                            		http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        12
+                    </td>
+                    <td style="text-indent:20px">
+
+                            		http://www.mulesoft.org/schema/mule/ee/core 
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        13
+                    </td>
+                    <td style="text-indent:20px">
+
+                            		http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        14
+                    </td>
+                    <td style="text-indent:20px">
+
+                            		http://www.mulesoft.org/schema/mule/salesforce 
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        15
+                    </td>
+                    <td style="text-indent:20px">
+
+                            		http://www.mulesoft.org/schema/mule/salesforce/current/mule-salesforce.xsd&quot;&gt;
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        16
+                    </td>
+                    <td style="text-indent:20px">
+
+                            		
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        17
+                    </td>
+                    <td style="text-indent:10px">
+
+                            	&lt;flow name=&quot;post:\customers&quot; doc:id=&quot;5e50209b-6fe6-426c-91bb-9baa583c1b78&quot; &gt;
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        18
+                    </td>
+                    <td style="text-indent:20px">
+
+                            		
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        19
+                    </td>
+                    <td style="text-indent:20px">
+
+                            		&lt;logger 
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        20
+                    </td>
+                    <td style="text-indent:30px">
+
+                            			level=&quot;INFO&quot; 
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        21
+                    </td>
+                    <td style="text-indent:30px">
+
+                            			doc:name=&quot;Logger&quot; 
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        22
+                    </td>
+                    <td style="text-indent:30px">
+
+                            			doc:id=&quot;5055cb99-70ec-4561-b533-b02c266cbc70&quot; 
+                    </td>
+                </tr>
+                    <tr class="covered">
+
+                    <td class="code-line">
+                        23
+                    </td>
+                    <td style="text-indent:100px">
+
+                            			message=&#39;#[%dw 2.0&amp;#10;import * from dw::util::Values&amp;#10;output application/json&amp;#10;---&amp;#10;{&amp;#10;	message: &quot;Create customer&quot;,&amp;#10;    payload: payload&amp;#10;		mask field(&quot;lastName&quot;) with &quot;*****&quot;&amp;#10;		mask field(&quot;address&quot;) with &quot;*****&quot;&amp;#10;		mask field(&quot;email&quot;) with &quot;*****&quot;  &amp;#10;}]&#39;/&gt;
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        24
+                    </td>
+                    <td style="text-indent:30px">
+
+                            			
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        25
+                    </td>
+                    <td style="text-indent:20px">
+
+                            		&lt;set-variable 
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        26
+                    </td>
+                    <td style="text-indent:30px">
+
+                            			value=&#39;#[%dw 2.0&amp;#10;output application/java&amp;#10;---&amp;#10;{&amp;#10;    &quot;firstName&quot;: payload.firstName default &quot;&quot;,&amp;#10;    &quot;lastName&quot;: payload.lastName default &quot;&quot;&amp;#10;}]&#39; 
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        27
+                    </td>
+                    <td style="text-indent:30px">
+
+                            			doc:name=&quot;otel Tags&quot; 
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        28
+                    </td>
+                    <td style="text-indent:30px">
+
+                            			doc:id=&quot;ba6d8725-03f8-4f4d-bd1f-27555a1ae729&quot; 
+                    </td>
+                </tr>
+                    <tr class="covered">
+
+                    <td class="code-line">
+                        29
+                    </td>
+                    <td style="text-indent:30px">
+
+                            			variableName=&quot;openTelemetryTags&quot; /&gt;
+                    </td>
+                </tr>
+                    <tr class="covered">
+
+                    <td class="code-line">
+                        30
+                    </td>
+                    <td style="text-indent:20px">
+
+                            		&lt;ee:transform doc:name=&quot;assign variables&quot; doc:id=&quot;dca47b2e-aa99-4b85-b277-339edff10ea6&quot; &gt;
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        31
+                    </td>
+                    <td style="text-indent:30px">
+
+                            			&lt;ee:message &gt;
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        32
+                    </td>
+                    <td style="text-indent:40px">
+
+                            				&lt;ee:set-payload &gt;&lt;![CDATA[%dw 2.0
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        33
+                    </td>
+                    <td>
+
+                            output application/java
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        34
+                    </td>
+                    <td>
+
+                            ---
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        35
+                    </td>
+                    <td>
+
+                            {
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        36
+                    </td>
+                    <td>
+
+                            }]]&gt;&lt;/ee:set-payload&gt;
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        37
+                    </td>
+                    <td style="text-indent:30px">
+
+                            			&lt;/ee:message&gt;
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        38
+                    </td>
+                    <td style="text-indent:30px">
+
+                            			&lt;ee:variables &gt;
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        39
+                    </td>
+                    <td style="text-indent:40px">
+
+                            				&lt;ee:set-variable variableName=&quot;location&quot; &gt;&lt;![CDATA[attributes.requestUri ++ &quot;/&quot;]]&gt;&lt;/ee:set-variable&gt;
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        40
+                    </td>
+                    <td style="text-indent:40px">
+
+                            				&lt;ee:set-variable variableName=&quot;firstName&quot; &gt;&lt;![CDATA[payload.firstName]]&gt;&lt;/ee:set-variable&gt;
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        41
+                    </td>
+                    <td style="text-indent:40px">
+
+                            				&lt;ee:set-variable variableName=&quot;lastName&quot; &gt;&lt;![CDATA[payload.lastName]]&gt;&lt;/ee:set-variable&gt;
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        42
+                    </td>
+                    <td style="text-indent:40px">
+
+                            				&lt;ee:set-variable variableName=&quot;payloadBackup&quot; &gt;&lt;![CDATA[payload]]&gt;&lt;/ee:set-variable&gt;
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        43
+                    </td>
+                    <td style="text-indent:30px">
+
+                            			&lt;/ee:variables&gt;
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        44
+                    </td>
+                    <td style="text-indent:20px">
+
+                            		&lt;/ee:transform&gt;
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        45
+                    </td>
+                    <td style="text-indent:20px">
+
+                            		
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        46
+                    </td>
+                    <td style="text-indent:20px">
+
+                            		&lt;flow-ref 
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        47
+                    </td>
+                    <td style="text-indent:30px">
+
+                            			doc:name=&quot;Get Customer By FirstName and LastName&quot; 
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        48
+                    </td>
+                    <td style="text-indent:30px">
+
+                            			doc:id=&quot;8ba3ec0e-9ae2-466c-8f02-312a3f7fa482&quot; 
+                    </td>
+                </tr>
+                    <tr class="covered">
+
+                    <td class="code-line">
+                        49
+                    </td>
+                    <td style="text-indent:30px">
+
+                            			name=&quot;queryCustomer&quot;/&gt;
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        50
+                    </td>
+                    <td style="text-indent:50px">
+
+                            					
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        51
+                    </td>
+                    <td style="text-indent:20px">
+
+                            		&lt;choice doc:name=&quot;Customer Exist?&quot; doc:id=&quot;a134d639-64b2-4cd5-b442-b8637e28cfda&quot; &gt;
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        52
+                    </td>
+                    <td style="text-indent:30px">
+
+                            			&lt;when expression=&quot;#[sizeOf(payload) == 0]&quot;&gt;
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        53
+                    </td>
+                    <td>
+
+                            
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        54
+                    </td>
+                    <td style="text-indent:40px">
+
+                            				&lt;flow-ref 
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        55
+                    </td>
+                    <td style="text-indent:50px">
+
+                            					doc:name=&quot;newCustomer&quot; 
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        56
+                    </td>
+                    <td style="text-indent:50px">
+
+                            					doc:id=&quot;e782a283-ea63-43a5-adf5-9c15f7441690&quot; 
+                    </td>
+                </tr>
+                    <tr class="covered">
+
+                    <td class="code-line">
+                        57
+                    </td>
+                    <td style="text-indent:50px">
+
+                            					name=&quot;newCustomer&quot;/&gt;
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        58
+                    </td>
+                    <td>
+
+                            
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        59
+                    </td>
+                    <td style="text-indent:30px">
+
+                            			&lt;/when&gt;
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        60
+                    </td>
+                    <td style="text-indent:30px">
+
+                            			
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        61
+                    </td>
+                    <td style="text-indent:30px">
+
+                            			&lt;otherwise &gt;
+                    </td>
+                </tr>
+                    <tr class="covered">
+
+                    <td class="code-line">
+                        62
+                    </td>
+                    <td style="text-indent:40px">
+
+                            				&lt;ee:transform doc:name=&quot;response&quot; doc:id=&quot;935868dc-c58c-4195-8fcc-a192f39dc9ec&quot; &gt;
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        63
+                    </td>
+                    <td style="text-indent:50px">
+
+                            					&lt;ee:message &gt;
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        64
+                    </td>
+                    <td style="text-indent:60px">
+
+                            						&lt;ee:set-payload &gt;&lt;![CDATA[%dw 2.0
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        65
+                    </td>
+                    <td>
+
+                            output application/json
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        66
+                    </td>
+                    <td>
+
+                            ---
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        67
+                    </td>
+                    <td>
+
+                            {
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        68
+                    </td>
+                    <td>
+
+                              message: &quot;${messages.customer-exists}&quot;
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        69
+                    </td>
+                    <td>
+
+                            }
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        70
+                    </td>
+                    <td>
+
+                            ]]&gt;&lt;/ee:set-payload&gt;
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        71
+                    </td>
+                    <td style="text-indent:50px">
+
+                            					&lt;/ee:message&gt;
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        72
+                    </td>
+                    <td style="text-indent:50px">
+
+                            					&lt;ee:variables &gt;
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        73
+                    </td>
+                    <td style="text-indent:60px">
+
+                            						&lt;ee:set-variable variableName=&quot;httpStatus&quot; &gt;&lt;![CDATA[409]]&gt;&lt;/ee:set-variable&gt;
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        74
+                    </td>
+                    <td style="text-indent:50px">
+
+                            					&lt;/ee:variables&gt;
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        75
+                    </td>
+                    <td style="text-indent:40px">
+
+                            				&lt;/ee:transform&gt;
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        76
+                    </td>
+                    <td style="text-indent:40px">
+
+                            				
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        77
+                    </td>
+                    <td style="text-indent:30px">
+
+                            			&lt;/otherwise&gt;
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        78
+                    </td>
+                    <td style="text-indent:20px">
+
+                            		&lt;/choice&gt;
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        79
+                    </td>
+                    <td style="text-indent:40px">
+
+                            		&lt;error-handler ref=&quot;global-error-handler&quot; /&gt;		
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        80
+                    </td>
+                    <td style="text-indent:20px">
+
+                            		
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        81
+                    </td>
+                    <td style="text-indent:10px">
+
+                            	&lt;/flow&gt;
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        82
+                    </td>
+                    <td style="text-indent:10px">
+
+                            	
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        83
+                    </td>
+                    <td style="text-indent:10px">
+
+                            	
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        84
+                    </td>
+                    <td style="text-indent:10px">
+
+                            	
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        85
+                    </td>
+                    <td style="text-indent:10px">
+
+                            	&lt;sub-flow name=&quot;newCustomer&quot; doc:id=&quot;d1e0c440-2c3a-4fbb-8ec1-66ecd9928fb5&quot;&gt;
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        86
+                    </td>
+                    <td style="text-indent:20px">
+
+                            		&lt;logger 
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        87
+                    </td>
+                    <td style="text-indent:30px">
+
+                            			level=&quot;INFO&quot; 
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        88
+                    </td>
+                    <td style="text-indent:30px">
+
+                            			doc:name=&quot;Logger&quot; 
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        89
+                    </td>
+                    <td style="text-indent:30px">
+
+                            			doc:id=&quot;7ec36c22-4cfc-4b54-bc92-c30e70c5cf75&quot; 
+                    </td>
+                </tr>
+                    <tr class="covered">
+
+                    <td class="code-line">
+                        90
+                    </td>
+                    <td style="text-indent:30px">
+
+                            			message=&quot;Customer doesn&#39;t exist&quot;/&gt;
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        91
+                    </td>
+                    <td style="text-indent:20px">
+
+                            		&lt;ee:transform 
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        92
+                    </td>
+                    <td style="text-indent:30px">
+
+                            			doc:name=&quot;Insert Payload&quot;
+                    </td>
+                </tr>
+                    <tr class="covered">
+
+                    <td class="code-line">
+                        93
+                    </td>
+                    <td style="text-indent:30px">
+
+                            			doc:id=&quot;ef364c21-ab4a-4554-a080-0512911d68d0&quot; &gt;
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        94
+                    </td>
+                    <td style="text-indent:30px">
+
+                            			&lt;ee:message &gt;
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        95
+                    </td>
+                    <td style="text-indent:40px">
+
+                            				&lt;ee:set-payload &gt;&lt;![CDATA[%dw 2.0
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        96
+                    </td>
+                    <td>
+
+                            output application/json
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        97
+                    </td>
+                    <td>
+
+                            ---
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        98
+                    </td>
+                    <td>
+
+                            [
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        99
+                    </td>
+                    <td style="text-indent:10px">
+
+                            	vars.payloadBackup mapObject ((value, key, index) -&gt; 
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        100
+                    </td>
+                    <td>
+
+                                    ((key as String) ++ &quot;__c&quot;) : value
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        101
+                    </td>
+                    <td>
+
+                                )
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        102
+                    </td>
+                    <td>
+
+                            ]]]&gt;
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        103
+                    </td>
+                    <td style="text-indent:40px">
+
+                            				&lt;/ee:set-payload&gt;
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        104
+                    </td>
+                    <td style="text-indent:30px">
+
+                            			&lt;/ee:message&gt;
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        105
+                    </td>
+                    <td style="text-indent:20px">
+
+                            		&lt;/ee:transform&gt;
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        106
+                    </td>
+                    <td style="text-indent:20px">
+
+                            		&lt;logger 
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        107
+                    </td>
+                    <td style="text-indent:30px">
+
+                            			level=&quot;INFO&quot; 
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        108
+                    </td>
+                    <td style="text-indent:30px">
+
+                            			doc:name=&quot;Logger&quot; 
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        109
+                    </td>
+                    <td style="text-indent:30px">
+
+                            			doc:id=&quot;d3795ee7-dc66-4f97-9e6f-945d1570ca3a&quot; 
+                    </td>
+                </tr>
+                    <tr class="covered">
+
+                    <td class="code-line">
+                        110
+                    </td>
+                    <td style="text-indent:30px">
+
+                            			message=&quot;#[payload]&quot;/&gt;
+                    </td>
+                </tr>
+                    <tr class="covered">
+
+                    <td class="code-line">
+                        111
+                    </td>
+                    <td style="text-indent:20px">
+
+                            		&lt;salesforce:create type=&quot;Customer__c&quot; doc:name=&quot;Create Customer&quot; doc:id=&quot;7d728d25-59ed-4b19-b0f3-35453d7083bf&quot; config-ref=&quot;MicorpSalesforceConfig&quot;/&gt;
+                    </td>
+                </tr>
+                    <tr class="covered">
+
+                    <td class="code-line">
+                        112
+                    </td>
+                    <td style="text-indent:20px">
+
+                            		&lt;logger level=&quot;DEBUG&quot; doc:name=&quot;Logger&quot; doc:id=&quot;87545764-12a1-4bf1-a13b-76daacfdfe41&quot; message=&quot;#[payload]&quot;/&gt;
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        113
+                    </td>
+                    <td style="text-indent:20px">
+
+                            		&lt;choice doc:name=&quot;verify success&quot; doc:id=&quot;6cba7c6b-f46d-4de0-aef1-4cec4a3a95f2&quot; &gt;
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        114
+                    </td>
+                    <td style="text-indent:30px">
+
+                            			&lt;when expression=&quot;#[payload.successful == true]&quot;&gt;
+                    </td>
+                </tr>
+                    <tr class="covered">
+
+                    <td class="code-line">
+                        115
+                    </td>
+                    <td style="text-indent:40px">
+
+                            				&lt;ee:transform doc:name=&quot;headers and response&quot; doc:id=&quot;5689e307-3fb5-4340-b876-f99c2b52debb&quot;&gt;
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        116
+                    </td>
+                    <td style="text-indent:50px">
+
+                            					&lt;ee:message&gt;
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        117
+                    </td>
+                    <td style="text-indent:60px">
+
+                            						&lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        118
+                    </td>
+                    <td>
+
+                            output application/json
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        119
+                    </td>
+                    <td>
+
+                            ---
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        120
+                    </td>
+                    <td>
+
+                            {
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        121
+                    </td>
+                    <td>
+
+                              message: &quot;Customer created successfully&quot;
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        122
+                    </td>
+                    <td>
+
+                            }]]&gt;&lt;/ee:set-payload&gt;
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        123
+                    </td>
+                    <td style="text-indent:50px">
+
+                            					&lt;/ee:message&gt;
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        124
+                    </td>
+                    <td style="text-indent:50px">
+
+                            					&lt;ee:variables &gt;
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        125
+                    </td>
+                    <td style="text-indent:60px">
+
+                            						&lt;ee:set-variable variableName=&quot;outboundHeaders&quot; &gt;&lt;![CDATA[%dw 2.0
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        126
+                    </td>
+                    <td>
+
+                            output application/java
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        127
+                    </td>
+                    <td>
+
+                            ---
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        128
+                    </td>
+                    <td>
+
+                            {&quot;Location&quot;: 
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        129
+                    </td>
+                    <td style="text-indent:10px">
+
+                            	( (vars.location as String)
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        130
+                    </td>
+                    <td style="text-indent:20px">
+
+                            		++ (payload.items[0].id as String)
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        131
+                    </td>
+                    <td style="text-indent:10px">
+
+                            	)
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        132
+                    </td>
+                    <td>
+
+                            }]]&gt;&lt;/ee:set-variable&gt;
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        133
+                    </td>
+                    <td style="text-indent:50px">
+
+                            					&lt;/ee:variables&gt;
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        134
+                    </td>
+                    <td style="text-indent:40px">
+
+                            				&lt;/ee:transform&gt;
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        135
+                    </td>
+                    <td style="text-indent:30px">
+
+                            			&lt;/when&gt;
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        136
+                    </td>
+                    <td style="text-indent:30px">
+
+                            			&lt;otherwise &gt;
+                    </td>
+                </tr>
+                    <tr class="covered">
+
+                    <td class="code-line">
+                        137
+                    </td>
+                    <td style="text-indent:40px">
+
+                            				&lt;ee:transform doc:name=&quot;Status 500 Response&quot; doc:id=&quot;6be99e5d-c1bc-4a68-b70d-476b73fcae35&quot; &gt;
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        138
+                    </td>
+                    <td style="text-indent:50px">
+
+                            					&lt;ee:message &gt;
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        139
+                    </td>
+                    <td style="text-indent:60px">
+
+                            						&lt;ee:set-payload &gt;&lt;![CDATA[%dw 2.0
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        140
+                    </td>
+                    <td>
+
+                            output application/json
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        141
+                    </td>
+                    <td>
+
+                            ---
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        142
+                    </td>
+                    <td>
+
+                            {
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        143
+                    </td>
+                    <td>
+
+                              message: &quot;${messages.customer-error}&quot;
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        144
+                    </td>
+                    <td>
+
+                            }]]&gt;&lt;/ee:set-payload&gt;
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        145
+                    </td>
+                    <td style="text-indent:50px">
+
+                            					&lt;/ee:message&gt;
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        146
+                    </td>
+                    <td style="text-indent:50px">
+
+                            					&lt;ee:variables &gt;
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        147
+                    </td>
+                    <td style="text-indent:60px">
+
+                            						&lt;ee:set-variable variableName=&quot;httpStatus&quot; &gt;&lt;![CDATA[&quot;500&quot;]]&gt;&lt;/ee:set-variable&gt;
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        148
+                    </td>
+                    <td style="text-indent:50px">
+
+                            					&lt;/ee:variables&gt;
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        149
+                    </td>
+                    <td style="text-indent:40px">
+
+                            				&lt;/ee:transform&gt;
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        150
+                    </td>
+                    <td style="text-indent:30px">
+
+                            			&lt;/otherwise&gt;
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        151
+                    </td>
+                    <td style="text-indent:20px">
+
+                            		&lt;/choice&gt;
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        152
+                    </td>
+                    <td style="text-indent:10px">
+
+                            	&lt;/sub-flow&gt;
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        153
+                    </td>
+                    <td>
+
+                            
+                    </td>
+                </tr>
+                    <tr class="no-flow-line">
+
+                    <td class="code-line">
+                        154
+                    </td>
+                    <td>
+
+                            &lt;/mule&gt;
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        </tbody>
+    </table>
+    <h4>(*) Number of processors executed during test</h4>
+</div>
+<script type="text/javascript" src="../assets/js/tsorter.min.js"></script>
+<script type="text/javascript">
+    function init() {
+        var sorter = tsorter.create('resources_table', 0, {
+            coverage: function (row) {
+                var cov = this.getCell(row).childNodes[1].childNodes[3].attributes['aria-valuenow'].textContent;
+                return parseFloat(cov.substring(cov[0].length - 1), 10);
+            }
+        });
+    }
+
+    window.onload = init;
+
+</script>
+</body>
+</html>

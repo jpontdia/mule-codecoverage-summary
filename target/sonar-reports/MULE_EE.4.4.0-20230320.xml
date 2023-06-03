@@ -1,0 +1,13 @@
+<testExecutions version="1">
+  <file path="src/test/munit/backend-errors.xml">
+    <testCase name="post-customer-backend-exception" duration="1578"/>
+    <testCase name="post-customer-not-created" duration="529"/>
+    <testCase name="delete-with-fake-id" duration="3350"/>
+  </file>
+  <file path="src/test/munit/api-console.xml">
+    <testCase name="test-console" duration="182"/>
+  </file>
+  <file path="src/test/munit/api-scenarios.xml">
+    <testCase name="api-scenariosTest" duration="8246"/>
+  </file>
+</testExecutions>
