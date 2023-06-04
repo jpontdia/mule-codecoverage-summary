@@ -19,7 +19,7 @@ jobs:
             target/surefire-reports/**/*.xml
 
       - name: Summary - Add code coverage
-        if: !always()
+        if:  ${{ false }}
         run: |
           temporal=""
           line=0
