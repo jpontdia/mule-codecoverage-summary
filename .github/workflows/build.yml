@@ -37,7 +37,9 @@ jobs:
 
             ((line=line+1))
           done < target/site/munit/coverage/summary.html
-          echo "$temporal" 
+          # echo "$temporal" 
 
           # Add job summary 
-          echo $temporal" >> $GITHUB_STEP_SUMMARY
+          echo "<div>" >> $GITHUB_STEP_SUMMARY
+          echo "$temporal" >> $GITHUB_STEP_SUMMARY
+          echo "</div>" >> $GITHUB_STEP_SUMMARY
