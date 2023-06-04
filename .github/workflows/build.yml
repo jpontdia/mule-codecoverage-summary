@@ -39,7 +39,7 @@ jobs:
           done < target/site/munit/coverage/summary.html
 
           # Test copying files
-          cp target/site/munit/coverage/api.html . 
+          cp target/site/munit/coverage/api-report.html . 
 
 
           # Add job summary 
