@@ -10,6 +10,9 @@ jobs:
     steps:
       - name: Check out repository code
         uses: actions/checkout@v3
+      - name: List files in the repository
+        run: |
+          ls ${{ github.workspace }}        
       - name: Summary - Add code coverage
         run: |
           temporal=""
@@ -40,7 +43,6 @@ jobs:
 
           # Test copying files
           cp target/site/munit/coverage/api-report.html . 
-
 
           # Add job summary 
           echo "<div>" >> $GITHUB_STEP_SUMMARY
