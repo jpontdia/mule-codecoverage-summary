@@ -1,0 +1,43 @@
+name: Build and deploy
+run-name: ${{ github.actor }} is testing code coverage summary 🚀
+
+on:
+  push:
+
+jobs:
+  Mulesoft:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v3
+      - name: Summary - Add code coverage
+        run: |
+          temporal=""
+          line=0
+          trigger=0
+          while IFS= read -r p; do
+          
+            if [[ "$p" == *"<div class=\"col-md-8 col-md-offset-2\">"* ]]; then
+              echo "Summary starts at line: $line"
+              ((line=line+1))
+              trigger=1
+              continue
+            fi
+
+            if [[ $trigger == 1 ]]; then
+              # echo "${p:0:6}"
+              echo "$p"
+              if [[ "${p:0:6}" == "</div>" ]]; then
+                echo "Exit condition at line: $line"
+                break
+              else
+                temporal+=$p
+              fi
+            fi
+
+            ((line=line+1))
+          done < target/site/munit/coverage/summary.html
+          echo "$temporal" 
+
+          # Add job summary 
+          echo $temporal" >> $GITHUB_STEP_SUMMARY
