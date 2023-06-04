@@ -9,7 +9,9 @@ jobs:
     runs-on: ubuntu-latest
 
     permissions:
-      issues: write
+      contents: read
+      issues: read
+      checks: write
       pull-requests: write
 
     steps:
@@ -21,7 +23,7 @@ jobs:
         if: always()
         with:
           files: |
-            target/surefire-reports/**/*.xml
+            target/surefire-reports/*.xml
 
       - name: Summary - Add code coverage
         if:  ${{ false }}
