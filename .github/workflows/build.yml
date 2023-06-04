@@ -7,6 +7,11 @@ on:
 jobs:
   Mulesoft:
     runs-on: ubuntu-latest
+
+    permissions:
+      issues: write
+      pull-requests: write
+
     steps:
       - name: Check out repository code
         uses: actions/checkout@v3
