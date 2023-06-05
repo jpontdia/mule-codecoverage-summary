@@ -63,7 +63,7 @@ jobs:
         with:
           # andymckay/append-gist-action
           token: ${{ secrets.GIST_TOKEN }} 
-          gistURL: https://gist.githubusercontent.com/$GITHUB_ORGANIZATION/$GIST_ID
+          gistURL: "https://gist.githubusercontent.com/$GITHUB_ORGANIZATION/$GIST_ID"
           file: mule-codecoverage-summary-ut.svg
 
           # append-gist-action
