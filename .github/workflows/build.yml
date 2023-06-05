@@ -57,7 +57,7 @@ jobs:
         if: >
           github.event_name == 'workflow_run' && github.event.workflow_run.head_branch == 'main' ||
           github.event_name != 'workflow_run' && github.ref == 'refs/heads/main'
-        uses: andymckay/append-gist-action@latest
+        uses: andymckay/append-gist-action@main
         #uses: exuanbo/actions-deploy-gist@v1.1.4 dont accept variables in gist-id
         #uses: popsiclestick/gist-sync-action@v1.2.0
         with:
