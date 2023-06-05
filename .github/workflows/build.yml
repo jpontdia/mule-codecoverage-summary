@@ -56,7 +56,7 @@ jobs:
         uses: andymckay/append-gist-action@1fbfbbce708a39bd45846f0955ed5521f2099c6d
         with:
           token: ${{ secrets.GIST_TOKEN }} 
-          gistURL: "https://gist.githubusercontent.com/$env:GITHUB_ORGANIZATION/$env:GIST_ID"
+          gistURL: "https://gist.githubusercontent.com/$GITHUB_ORGANIZATION/$GIST_ID"
           file: mule-codecoverage-summary-ut.svg
 
       - name: Summary - Add code coverage
