@@ -25,8 +25,8 @@ jobs:
         uses: jpontdia/devops-pipelines/packages/summary-testcases@main
         with:
           gist-token: ${{ secrets.GIST_TOKEN}}
-          github-organization: $GITHUB_ORGANIZATION
-          badge-gist-id: $GIST_ID
+          github-organization: jpontdia
+          badge-gist-id: 497b75eb7c74c14113baa9a875bed936
           service-name: mule-codecoverage-summary
 
       - name: Summary - Add code coverage
