@@ -3,7 +3,9 @@ run-name: ${{ github.actor }} is testing code coverage summary 🚀
 
 on:
   push:
-
+env:
+  GITHUB_ORGANIZATION: jpontdia
+  GIST_ID: 497b75eb7c74c14113baa9a875bed936
 jobs:
   Mulesoft:
     runs-on: ubuntu-latest
@@ -55,11 +57,16 @@ jobs:
         if: >
           github.event_name == 'workflow_run' && github.event.workflow_run.head_branch == 'main' ||
           github.event_name != 'workflow_run' && github.ref == 'refs/heads/main'
-        uses: andymckay/append-gist-action@1fbfbbce708a39bd45846f0955ed5521f2099c6d
+        #uses: andymckay/append-gist-action@1fbfbbce708a39bd45846f0955ed5521f2099c6d
+        uses: exuanbo/actions-deploy-gist@v1.1.4
         with:
           token: ${{ secrets.GIST_TOKEN }}
-          gistURL: https://gist.githubusercontent.com/jpontdia/b8a8e23144cfb9ccb6b355587209095f
-          file: mule-codecoverage-summary-ut.svg
+          #gistURL: https://gist.githubusercontent.com/$GITHUB_ORGANIZATION/$GIST_ID
+          gist_id: https://gist.githubusercontent.com/$GITHUB_ORGANIZATION/$GIST_ID
+          gist_description: Unit test badge 
+          #file: mule-codecoverage-summary-ut.svg
+          file_path: mule-codecoverage-summary-ut.svg
+          file_type: binary
 
       - name: Summary - Add code coverage
         if:  ${{ false }}
