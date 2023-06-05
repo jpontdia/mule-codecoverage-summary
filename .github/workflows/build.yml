@@ -59,7 +59,7 @@ jobs:
         with:
           token: ${{ secrets.GIST_TOKEN }}
           gistURL: https://gist.githubusercontent.com/jpontdia/b8a8e23144cfb9ccb6b355587209095f
-          file: codecoverage.svg
+          file: mule-codecoverage-summary-ut.svg
 
       - name: Summary - Add code coverage
         if:  ${{ false }}
