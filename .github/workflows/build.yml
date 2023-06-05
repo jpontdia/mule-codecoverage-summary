@@ -53,34 +53,14 @@ jobs:
           path: mule-codecoverage-summary-ut.svg
 
       - name: Upload badge to Gist
-        # Upload only for main branch
         if: >
           github.event_name == 'workflow_run' && github.event.workflow_run.head_branch == 'main' ||
           github.event_name != 'workflow_run' && github.ref == 'refs/heads/main'
         uses: andymckay/append-gist-action@master
-        #uses: exuanbo/actions-deploy-gist@v1.1.4 dont accept variables in gist-id
-        #uses: popsiclestick/gist-sync-action@v1.2.0
         with:
-          # andymckay/append-gist-action
           token: ${{ secrets.GIST_TOKEN }} 
           gistURL: "https://gist.githubusercontent.com/$GITHUB_ORGANIZATION/$GIST_ID"
           file: mule-codecoverage-summary-ut.svg
-
-          # append-gist-action
-          #token: ${{ secrets.GIST_TOKEN }} 
-          #gistURL: https://gist.githubusercontent.com/$GITHUB_ORGANIZATION/$GIST_ID
-          #gist_id: https://gist.githubusercontent.com/$GITHUB_ORGANIZATION/$GIST_ID
-          #gist_description: Unit test badge 
-          #file: mule-codecoverage-summary-ut.svg
-          #file_path: mule-codecoverage-summary-ut.svg
-          #file_type: binary
-          #
-          # gist-sync-action@v1.2.0
-          #auth: ${{ secrets.GIST_TOKEN }}
-          #gist_url: https://gist.githubusercontent.com/$GITHUB_ORGANIZATION/$GIST_ID
-          #gist_title: Unit test badge
-          #gist_description: Unit test badge
-          #github_file: mule-codecoverage-summary-ut.svg
 
       - name: Summary - Add code coverage
         if:  ${{ false }}
