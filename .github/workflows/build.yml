@@ -29,6 +29,15 @@ jobs:
           badge-gist-id: 497b75eb7c74c14113baa9a875bed936
           service-name: mule-codecoverage-summary
 
+      - name: Summary - Publish test results
+        uses: jpontdia/devops-pipelines/packages/summary-codecoverage@main
+        with:
+          gist-token: ${{ secrets.GIST_TOKEN}}
+          github-organization: jpontdia
+          badge-gist-id: 497b75eb7c74c14113baa9a875bed936
+          service-name: mule-codecoverage-summary
+
+
       - name: Summary - Add code coverage
         if:  ${{ false }}
         run: |
