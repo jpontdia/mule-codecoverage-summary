@@ -35,6 +35,7 @@ jobs:
           gist-token: ${{ secrets.GIST_TOKEN}}
           github-organization: ${{ env.GITHUB_ORGANIZATION }}
           badge-gist-id: ${{ env.GIST_ID }}
+          debug: true
 
       - name: Summary - Add code coverage
         if:  ${{ false }}
