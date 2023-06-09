@@ -11,4 +11,4 @@
 &nbsp;&nbsp;
 ![tst](https://badgen.net/github/checks/jpontdia/mule-codecoverage-summary/main/tst?label=Deployment%20tst)
 <br>
-Mulesoft service for testing code coverage summary for github actions.  
+Mulesoft service for testing code coverage summary for github actions. 
